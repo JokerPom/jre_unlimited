@@ -40,7 +40,7 @@ RUN set -ex && \
     fi && \
     sed -i s/#networkaddress.cache.ttl=-1/networkaddress.cache.ttl=10/ $JAVA_HOME/lib/security/java.security && \
     apk add tzdata && \
-    cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
+    ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     echo "Etc/Asia/Shanghai" > /etc/timezone && \
     apk del curl glibc-i18n && \
     rm -rf /var/cache/apk/ \
