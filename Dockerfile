@@ -3,10 +3,6 @@ FROM alpine:3.8
 
 MAINTAINER wang.jun@rongzer.com
 
-MAINTAINER Anastas Dancha <anapsix@random.io>
-# thanks to Vladimir Krivosheev <develar@gmail.com> aka @develar for smaller image
-# and Victor Palma <palma.victor@gmail.com> aka @devx for pointing it out
-
 # Java Version and other ENV
 ENV JAVA_VERSION_MAJOR=8 \
     JAVA_VERSION_MINOR=231 \
